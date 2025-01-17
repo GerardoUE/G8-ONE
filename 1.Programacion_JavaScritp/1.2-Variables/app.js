@@ -15,9 +15,9 @@ let numUser = prompt('Me indicas un numero'); // con prompt Nos aparece un mensa
 
 console.log(numUser); //Nos aparece el dto ingresado en la consola del navegador que se muestra presionando F12 , a eso se le lama imprimir y se ve en otros lenguajes mayor mente con print
 
+//IF : se traduce como si , se usa como condicional para realizar una accion ejmp: Si numSecreto es igual a numUser se realizar una alerta con el mensaje 'Acertaste el numero 😁'
+
 if (numSecreto == numUser){
   alert('Acertaste el numero 😁')
 }
-else{
-  alert('No acertaste el numero 😔')
-};
+
