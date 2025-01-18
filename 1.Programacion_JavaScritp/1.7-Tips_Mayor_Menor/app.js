@@ -1,16 +1,17 @@
 //VARIABLES
 let numSecreto = 6;
-let numUser = prompt('Me indicas un numero');
+let numUser = prompt('Me indicas un numero entre 1 y 10 or favor!');
 
 console.log(numUser); 
 
 
-  //La condicion se cumple si numScreto es igual a numUser
 if (numSecreto == numUser){
-  //Acetamos, la condicion se cumplio    //para usar variables en texto se usa ${variable} de esta manera e invoca la variable o codigo de Js
-  //alert(`Acertaste, el numero es : ${numUser}`); //remplazamos la comilla simple '' por las comillas invertidad `` para el uso de variable en texto
-  alert('Acertaste, el numero es :' + numUser); // Otra forma de concatenar el texto con la variable es agregando un + despues del texto hacia la variable
-} else{
-  //No acertamos, la condicion no se cumplio
-  alert('No acertaste el numero 😔');
+  alert(`Acertaste, el numero es : ${numUser}`);
+} else{ //se realiza una condiconal anidada dentro de else 
+  if(numSecreto > numUser){
+    alert('El numero secreto es mayor')
+  }else{
+    alert('El numero secreto es menor')
+  }
+  //alert('No acertaste el numero 😔');
 };
