@@ -24,7 +24,7 @@ Aquí hay algunos puntos clave sobre el DOM:
 */
 
 // crearemos una variable y Usaremos document.querySelector() para selecionar que elemento de html usaremos.
-let titulo = document.querySelector('h1');  //usaremos h1 , ponerlo entre comillas, recordar que es un elemnto string
+let titulo = document.querySelector('h1');  //usaremos h1 , ponerlo entre comillas, recordar que es un elemnto string o tag o etiqueta.
 
 
 // usaremos el element.innerHTML para modificar el elemento h1. 
