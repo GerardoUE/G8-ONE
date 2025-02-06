@@ -1,1 +1,49 @@
-JavaScript
+* JavaScript 
+
+JavaScript es un lenguaje de programacion web , de alto nivel o de bajo tipado , en la cual se centra en los navegadores web o servidores si usamos nodejs.
+
+sintaxys :   
+
+  let saludo = "Hola mundo, hola JavaScript" 
+
+  console.log(saludo)
+
+La sintaxys esta conformada por :
+
+Declaracion de variables :
+  let : es la declaracion de variable que se puede modificar
+  const : no se puede modificar
+  var : alta mente modificable pero no se usa por que genera conplicaciones o no es recomendado/
+
+Nombre de variable: 
+  el nombre de variable representa a la variable a crear , tiene que tener relevancia a su contenido
+  
+  exite diferentes formas para nombrar :
+
+  - nombre
+  - nombreUsuario
+  - USUARIO
+
+Adignacion : 
+  La aginacion '=' es lo inflatable si no se coloca la variable tiene errores.
+
+Contenido : 
+
+  se puede decir que es lo que identifica el tipo de variable que es :
+
+  - Numero Entero / int : 45
+  - Numero Flotante / float: 3.1415
+  - Cadena Texto / string : 'Esto es un texto' -> siempre se tiene que colocar las comillas para texto , ya sea comilla siemple ' ' o comillas dobles " ".
+  - Boleanos / bolean : True (verdadero) o False (falso)
+
+
+TIPOS DE OPERACION : 
+
+  - suma  +
+  - resta - 
+  - multiplicacion  * 
+  - division /
+  - adicion **
+  - sustraccion //
+  - resto  %
+

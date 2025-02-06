@@ -1,6 +1,8 @@
 
-let numSecr = generarNumeroRandom(); // se hace el llamado de la funncion en la variable . esta variable se le conoce como Variable Global.
-let intento = 1;
+let numSecr = 0; 
+let intento = 0;
+let listasNumerosSorteados = [];
+
 
 
 function asignarTextoElemento(elemento, texto){ //creamos las variables a usar, elemento y texto
@@ -8,10 +10,19 @@ function asignarTextoElemento(elemento, texto){ //creamos las variables a usar, 
     elementoHTML.innerHTML = texto; //usamos texto, asi desde la invocacion ya colocamos texto 
 }
 
+// Recursividad : Una funcion se llame a si misma
 function generarNumeroRandom(){ //se crea la funcion para generar un numero random
-    return Math.floor(Math.random()*10)+1; //se retorna el math 
-// let numeroRamdon = Math.floor(Math.random()*10)+1;  // se puede crear una variable y hacerner el retorno, a eso se le conoce como variable de bloque o privada.
+    let numeroGenerado =  Math.floor(Math.random()*10)+1; //se retorna el math 
+    // si el numero generado esta incluido en la lista
+    if (listasNumerosSorteados.includes(numeroGenerado)){ //includes barre o revisa la lista de numeroGenerado y nos devulve un true o false si existe o no
+        return generarNumeroRandom(); //llamamos a esta misma funcion que empieze de nuevo y nos de otro numero.
+    }else{ // si el numero generado no esta incluido en la lista
+        listasNumerosSorteados.push(numeroGenerado); //ingresamos el numero que se genero y los agregamos a nuestra lista o array
+        return numeroGenerado // nos devuelve el numero generado
+    }
 }
+
+//NOTA: al usar la rescursividad al momento de no haber nuevo nuevos a ingresar , se genera un error.
 
 function verficarNumero(){ //funcion que se esta usando en input, donde ingresaremos nuestro numero
     let numeroUsuario = parseInt(document.getElementById('valorUsuario').value); // estamos tomando el valor a ingresar en tag input  / el .value es que quiere obtener el valor que ingresamos.
