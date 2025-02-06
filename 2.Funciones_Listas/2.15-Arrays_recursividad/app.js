@@ -1,7 +1,7 @@
-//return en las funciones es para retornar las respuestas, es bueno colocarlo al final como buena practica.
 
 let numSecr = generarNumeroRandom(); // se hace el llamado de la funncion en la variable . esta variable se le conoce como Variable Global.
 let intento = 1;
+
 
 function asignarTextoElemento(elemento, texto){ //creamos las variables a usar, elemento y texto
     let elementoHTML = document.querySelector(elemento); //usamos elemento como variable, asi solo desde la invocacion usamos la etiqueta a usar
